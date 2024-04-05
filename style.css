@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    color: white;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.4)), url("Assest/bgimage.jpg");
+   /* background-image: url("Assest/bgimage.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+/* -----------NAVBAR------- */
+.navbar{
+
+    display: flex;
+    align-items: center;
+    padding: 2rem 5rem;
+    justify-content: space-between;
+}
+.navbar .logo img{
+    height: 45px;
+}
+.navbar .line{
+    padding-bottom:10px;
+    border-bottom: solid white 2px;
+}
+.line .list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+.list .list-item{
+
+    margin-right: 20px;
+}
+
+/* -----------------------------LEFT--------------------------------- */
+.left{
+    
+    align-items: center;
+    width:50%;
+    padding:5rem ;
+    float: left;
+}
+.left h1{
+    
+font-size: 40px;
+padding:30px;
+
+}
+.left button{
+    border-radius:20px;
+    padding: 10px 20px;
+    margin: 10px 40px;
+    border-color: white;
+    background-color: transparent;
+}
+/* -----------------------------RIGHT----------------------------- */
+.right{
+   position: relative;
+
+}
+/* ----------------SQUARE--------------------- */
+.square{
+    height: 110px;
+    right: 150px;
+    top: 30px;
+    width: 250px;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(215, 215, 215, 0.834);
+}
+.hero .right .square:last-child {
+   
+    right:350px;
+    top: 270px;    
+}
+.fa-solid{
+    border-radius: 20px;
+    padding: 8px 30px;
+    margin: 10px;
+    color: black;
+    background-color:white;
+}
+
+.square p{
+    font-size:15px;
+}
+/* --------------------------------LINE------------------------- */
+.circle-line{
+    position: absolute;
+    height: 50px;
+    width: 2px; 
+    top: 130px;
+    left: 220px;
+    background-color: white;
+}
+.square:last-child .circle-line {
+    position: absolute;
+    top: 30px;
+    left:290px;
+    transform: rotate(-90deg);
+}
+/* --------------CIRCLE----------------- */
+ .circle{
+    position: absolute;
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    background-color: white; 
+    bottom: 0px;
+    left: -8px;
+}
